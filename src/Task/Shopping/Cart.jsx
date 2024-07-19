@@ -40,6 +40,8 @@ const Cart = () => {
 
     return (
         <div className="cart_main">
+            <h1 style={{ margin: "1rem" }}>Shoping Cart</h1>
+
             <div className="cart_tab">
                 <ul>
                     <li

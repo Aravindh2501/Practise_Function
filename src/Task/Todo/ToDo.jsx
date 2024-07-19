@@ -72,48 +72,50 @@ const RemoveButton = styled.button`
 `;
 
 const ToDo = () => {
-    const [input, setInput] = useState('');
-    const [tasks, setTasks] = useState([]);
+  const [input, setInput] = useState('');
+  const [tasks, setTasks] = useState([]);
 
-    const handleChange = (e) => {
-        setInput(e.target.value);
-    };
+  const handleChange = (e) => {
+    setInput(e.target.value);
+  };
 
-    const handleAdd = () => {
-        if (input.trim()) {
-            setTasks([...tasks, input]);
-            setInput('');
-        }
-    };
+  const handleAdd = () => {
+    if (input.trim()) {
+      setTasks([...tasks, input]);
+      setInput('');
+    }
+  };
 
-    const handleRemove = (index) => {
-        setTasks(tasks.filter((task, idx) => idx !== index));
-    };
+  const handleRemove = (index) => {
+    setTasks(tasks.filter((task, idx) => idx !== index));
+  };
 
-    return (
-        <Container className='todo'>
-            <InputContainer>
-                <Input
-                    type="text"
-                    name="text"
-                    placeholder='Enter the task to do'
-                    onChange={handleChange}
-                    value={input}
-                />
-                <AddButton onClick={handleAdd}>Add</AddButton>
-            </InputContainer>
-            <TaskList className="lift">
-                <ul style={{ padding: "0px", margin: "0px" }}>
-                    {tasks.map((task, idx) => (
-                        <TaskItem key={idx}>
-                            <p>{task}</p>
-                            <RemoveButton onClick={() => handleRemove(idx)}>Remove</RemoveButton>
-                        </TaskItem>
-                    ))}
-                </ul>
-            </TaskList>
-        </Container>
-    );
+  return (
+    <Container className='todo'>
+      <h1 style={{ margin: "1rem" }}>ToDo List</h1>
+
+      <InputContainer>
+        <Input
+          type="text"
+          name="text"
+          placeholder='Enter the task to do'
+          onChange={handleChange}
+          value={input}
+        />
+        <AddButton onClick={handleAdd}>Add</AddButton>
+      </InputContainer>
+      <TaskList className="lift">
+        <ul style={{ padding: "0px", margin: "0px" }}>
+          {tasks.map((task, idx) => (
+            <TaskItem key={idx}>
+              <p>{task}</p>
+              <RemoveButton onClick={() => handleRemove(idx)}>Remove</RemoveButton>
+            </TaskItem>
+          ))}
+        </ul>
+      </TaskList>
+    </Container>
+  );
 };
 
 export default ToDo;

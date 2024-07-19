@@ -13,6 +13,7 @@ const Accordin = () => {
 
     return (
         <div className="Accordin">
+            <h1 style={{ margin: "1rem" }}>Accordin</h1>
             {accordin.map((item, index) => (
                 <div key={index}>
                     <div

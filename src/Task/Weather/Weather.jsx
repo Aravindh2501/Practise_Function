@@ -36,6 +36,7 @@ const Weather = () => {
 
   return (
     <div className='weather'>
+      <h1 style={{ margin: "1rem" }}>Weather App</h1>
       <div className="card">
         <div className="card_top">
           <input

@@ -17,6 +17,7 @@ const ThemeToggle = () => {
 
     return (
         <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
+            <h1 style={{ margin: "1rem" }}>Theme Changer</h1>
             <button className="theme-toggle-button" onClick={toggleTheme}>
                 Toggle Theme
             </button>

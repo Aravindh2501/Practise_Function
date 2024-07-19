@@ -42,6 +42,8 @@ const Timer = () => {
 
     return (
         <div className="timer">
+            <h1 style={{ margin: "1rem" }}>Timer</h1>
+
             <h1>{time}s</h1>
             <div className="controls">
                 <input

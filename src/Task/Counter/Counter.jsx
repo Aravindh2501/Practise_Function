@@ -14,6 +14,7 @@ const Counter = () => {
 
     return (
         <div>
+            <h1 style={{ margin: "1rem" }}>Counter</h1>
             <p style={{ padding: "4px 10px ", fontSize: "2em", marginLeft: "1rem" }}>{count}</p>
             <div className="">
                 <button style={{ padding: "4px 10px ", fontSize: "2em", marginLeft: "1rem" }} onClick={handleInc}>+</button>

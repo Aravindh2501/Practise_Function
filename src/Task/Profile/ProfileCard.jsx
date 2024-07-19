@@ -71,6 +71,8 @@ const ProfileCard = () => {
 
     return (
         <div className='ProfileCard'>
+            <h1 style={{ margin: "1rem" }}>Profile</h1>
+
             <div className="card">
                 <div className="profile_img">
                     {image ? (
