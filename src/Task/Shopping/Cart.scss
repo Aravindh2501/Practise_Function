@@ -1,0 +1,89 @@
+.cart_main {
+    margin: 2rem 5rem;
+
+    .cart_tab {
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+
+            li {
+                padding: 10px 40px;
+                border-bottom: 2px solid transparent;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &.active {
+                    border-bottom: 2px solid red;
+                }
+            }
+        }
+    }
+
+    .cart_search {
+        margin-top: 2rem;
+
+        input {
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    .cart {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3rem 0rem;
+
+        .card {
+            width: 25rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            padding: 1.4rem;
+            border-radius: 1rem;
+
+            .card_img {
+                width: 13rem;
+                margin: 0 auto 1rem;
+
+                img {
+                    border-radius: 12px;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            h2 {
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                &:nth-child(2) {
+                    margin-bottom: 8px;
+                }
+
+                &:nth-child(3) {
+                    margin-bottom: 1rem;
+                    font-size: 1.3rem;
+                }
+            }
+
+            button {
+                border: none;
+                background: #3580fe;
+                width: 100%;
+                padding: 12px 0;
+                border-radius: 6px;
+                color: white;
+                font-weight: 500;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

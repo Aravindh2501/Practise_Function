@@ -1,0 +1,31 @@
+Here are some beginner-friendly tasks you can try with React to build your skills:
+
+Create a Simple Counter App:
+Implement a counter that increments or decrements when buttons are clicked.
+
+To-Do List:
+Build a basic to-do list where users can add and remove items.
+
+Weather App:
+Use a weather API to display the current weather for a selected city.
+
+User Profile Card:
+Create a user profile component that displays a name, photo, and bio.
+
+Basic Form Handling:
+Create a simple form that captures user input and displays it below the form when submitted.
+
+Toggle Theme:
+Implement a light/dark mode toggle for your app.
+
+Shopping Cart:
+Simulate a shopping cart with add/remove functionality for items.
+
+Image Gallery:
+Create a gallery component that displays images and allows users to click for a larger view.
+
+Accordion Component:
+Build a simple accordion that expands and collapses sections of content.
+
+Timer/Stopwatch:
+Create a timer that counts up or down based on user input.

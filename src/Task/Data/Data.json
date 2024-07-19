@@ -1,0 +1,42 @@
+[
+    {
+        "question": "How do you declare a variable in JavaScript?",
+        "answer": "You can declare a variable using var, let, or const. For example: var name = 'Muthu'; let age = 25; const country = 'India';"
+    },
+    {
+        "question": "How do you create a function in JavaScript?",
+        "answer": "A function can be created using the function keyword or as an arrow function. For example: function greet() { console.log('Hello'); } or const greet = () => { console.log('Hello'); };"
+    },
+    {
+        "question": "What is the difference between == and === in JavaScript?",
+        "answer": "== compares values for equality after converting both values to a common type, while === compares both value and type without conversion."
+    },
+    {
+        "question": "How do you add an element to the end of an array?",
+        "answer": "You can use the push method. For example: let arr = [1, 2, 3]; arr.push(4);"
+    },
+    {
+        "question": "How do you remove the last element from an array?",
+        "answer": "You can use the pop method. For example: let arr = [1, 2, 3]; arr.pop();"
+    },
+    {
+        "question": "What is a callback function?",
+        "answer": "A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action."
+    },
+    {
+        "question": "How do you handle exceptions in JavaScript?",
+        "answer": "You handle exceptions using try, catch, and finally blocks. For example: try { // code } catch (error) { // error handling } finally { // code to run regardless of try / catch result }"
+    },
+    {
+        "question": "What is the use of the map method in JavaScript?",
+        "answer": "The map method creates a new array populated with the results of calling a provided function on every element in the calling array. For example: let arr = [1, 2, 3]; let newArr = arr.map(x => x * 2);"
+    },
+    {
+        "question": "How do you convert a string to a number in JavaScript?",
+        "answer": "You can use the parseInt, parseFloat, or Number functions. For example: let num = Number('42');"
+    },
+    {
+        "question": "What is the purpose of the JavaScript Object Notation (JSON)?",
+        "answer": "JSON is a format for storing and transporting data, often used when data is sent from a server to a web page. It is easy to read and write for humans and easy to parse and generate for machines."
+    }
+]

@@ -1,0 +1,65 @@
+// ThemeToggle.scss
+
+// Define colors for light and dark themes
+$light-background: #ffffff;
+$light-text: #333333;
+
+$dark-background: #333333;
+$dark-text: #ffffff;
+
+// Mixin for light theme styles
+@mixin light-theme {
+    background-color: $light-background;
+    color: $light-text;
+}
+
+// Mixin for dark theme styles
+@mixin dark-theme {
+    background-color: $dark-background;
+    color: $dark-text;
+}
+
+// Default styles
+.app {
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    // Default light theme
+    @include light-theme;
+
+    button {
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border-radius: 5px;
+
+        // Button styles for light theme
+        background-color: $light-background;
+        color: $light-text;
+
+        &:hover {
+            background-color: lighten($light-background, 10%);
+        }
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+// Dark theme styles
+.app.dark {
+    @include dark-theme;
+
+    button {
+        // Button styles for dark theme
+        background-color: $dark-background;
+        color: $dark-text;
+
+        &:hover {
+            background-color: darken($dark-background, 10%);
+        }
+    }
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css";
+// import ToDo from './Task/Todo/ToDo'
+// import Counter from './Task/Counter/Counter'
+// import Weather from './Task/Weather/Weather';
+// import ProfileCard from './Task/Profile/ProfileCard';
+// import ToogleTheme from './Task/ToogleTheme/ToogleTheme';
+// import Cart from './Task/Shopping/Cart';
+// import Gallery from './Task/Gallery/Gallery';
+// import Accordin from './Task/Accordin/Accordin';
+import Timer from './Task/Timer/Timer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      {/* <Counter />
+      <ToDo /> */}
+      {/* <Weather /> */}
+      {/* <ProfileCard /> */}
+      {/* <ToogleTheme /> */}
+      {/* <Cart /> */}
+      {/* <Gallery /> */}
+      {/* <Accordin /> */}
+      <Timer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
